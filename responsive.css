@@ -1,0 +1,86 @@
+@media screen and (max-width: 991px) {
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .main-nav {
+        overflow: initial;
+    }
+
+   .nav-links {                 /* Basically ye wo query hai jisse nav links chupp jayengi */
+        position: relative;
+        background-color: rgb(129, 77, 13);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2 ease-in-out;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 767) {
+
+    .header-section {
+
+      flex-direction: column;
+}
+
+.header-left {
+    max-width: 85vw;
+    text-align: center;
+    align-items: center;
+    }
+
+    .big-feature-container {
+        display: column;
+          
+     }
+
+     .feature-img img {
+        width: 190px;
+        flex-direction: column;
+        
+     }
+
+     .feature-desc {
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .feature-desc p {
+        flex-direction: column;
+        align-items: flex-start;
+     }
+}
+
+@media screen and (max-widht: 479px) {
+    
+    :root{
+        --padding-inline-section: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+     }
+    
+     h2 {
+    font-size: 1.2rem;
+     }
+    
+     h3 {
+        font-size: 1.1rem;
+     }
+
+     p {
+        font-size: 1rem;
+     }
+}
