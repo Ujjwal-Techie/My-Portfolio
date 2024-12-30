@@ -40,7 +40,7 @@ font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     color: var(--secondary-text-color);
-    line-height: 1.8rem;
+    line-height: 1.5rem;
  }
 
  a {
@@ -62,9 +62,10 @@ font-size: 2rem;
  }
 
 .container {
-    max-width: 1150px;
-    margin-inline: auto;
-    padding-inline: var(--padding-inline-section);
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
     overflow: hidden;
     
     
@@ -92,33 +93,37 @@ font-size: 2rem;
 /*------------------ Nav Bar Section--------------------- */
 
 .main-nav  {
-   
-   margin-top: 0px;
+   display: flex;
    font-weight: bolder;
    font-size: large;
-   justify-content: right;
-   max-height: fit-content;
+   justify-content: space-between;
+   align-items: center;
    position: relative;
    
 
 }
 
 .company-logo img {
-width: 400px;
-height: 250px;
+max-width: 200px;
+height: auto;
 justify-content: center;
-margin-left: 15px;
-padding-left: 50px;
+margin-left: 5px;
+padding-left: 20px;
 }
 
 .nav-links {
-   flex-basis: 700px;
+   flex-grow: 1;
+    text-align: right;
    
 }
 
 .nav-links ul {
-   justify-content: right;
+   display: flex;
+    list-style: none;
    gap: 30px;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
    
 }
 
@@ -134,17 +139,21 @@ header {
 }
 
 .header-section {
-   justify-content: center;
-   gap: 70px;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: wrap;
 }
 
 .header-left {
 max-width: 35vw;
+    flex: 1;
 }
 
 .sharma{
 
-   width: 115%;
+   width: 100%;
    position: relative;
    min-height: 100px;
    background: whitesmoke;
@@ -155,10 +164,10 @@ max-width: 35vw;
 .sharma-text {
    position: relative;
    top: 20px;
-   left: 20px;
-   right: 50px;
+   left: 5px;
+   right: 20px;
    color: black;
-   text-align: justify;
+   text-align: center;
 }  
 
 .header-left h1 {
@@ -167,8 +176,9 @@ max-width: 35vw;
 
 .header-right img {
 
-   width: 200px;
-   height: 170px;
+   width: 100%;
+    max-width: 200px;
+   height: auto;
 }
 
 /* Companies Section */
@@ -182,13 +192,17 @@ max-width: 35vw;
 
 .logos {
 
-   justify-content: space-evenly;
-   flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .logo {
 
-   height: 100px;
+   max-width: 80px;
+    height: auto;
 }
 
 /* About Me */
@@ -212,8 +226,8 @@ padding: 30px var(--padding-inline-section) 0;
 }
 
 .feature-img img {
-   width: 115%;
-   min-height: 200px;;
+   width: 50%;
+   min-height: 50px;
    
 }
 
